@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth gradient backdrop for hero */
+.hero-gradient {
+  background: radial-gradient(
+      1200px 600px at 20% -10%,
+      rgba(53, 102, 241, 0.1),
+      transparent 50%
+    ),
+    radial-gradient(
+      900px 500px at 90% 0%,
+      rgba(23, 23, 23, 0.06),
+      transparent 50%
+    );
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus styles */
+.focus-visible:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.qxCTlb {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding-block: 10px;
+}
+
+.qxCTlb:hover {
+  background-color: #1e293b !important;
+}
+
+.Xfsokf {
+  background-color: #0f172b;
+  top: 20px;
+  right: 20px;
+}
+
+.hur54b {
+  padding: 0;
+}
+
+#nav-calendar-btn-wrapper > button {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 12px;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.body-no-scroll > *:not(.hur54b) {
+  pointer-events: none;
+}
