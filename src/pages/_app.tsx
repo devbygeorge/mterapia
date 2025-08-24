@@ -2,28 +2,12 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
 import { Manrope } from "next/font/google";
-import Head from "next/head";
 import Script from "next/script";
 import { useDisableBodyScrollOnModal } from "@/hooks";
 
 const manrope = Manrope({
   subsets: ["latin"],
 });
-
-declare global {
-  interface Window {
-    calendar: {
-      schedulingButton: {
-        load: (options: {
-          url: string;
-          color: string;
-          label: string;
-          target: HTMLElement | null;
-        }) => void;
-      };
-    };
-  }
-}
 
 function loadCalendarButton(label: string, target: HTMLElement | null) {
   window.calendar.schedulingButton.load({
@@ -45,21 +29,13 @@ export default function App({ Component, pageProps }: AppProps) {
   };
 
   return (
-    <>
-      <Head>
-        <link
-          href="https://calendar.google.com/calendar/scheduling-button-script.css"
-          rel="stylesheet"
-        />
-      </Head>
-      <div className={manrope.className}>
-        <Component {...pageProps} />
-        <Script
-          src="https://calendar.google.com/calendar/scheduling-button-script.js"
-          strategy="afterInteractive"
-          onLoad={initCalendarButtons}
-        />
-      </div>
-    </>
+    <div className={manrope.className}>
+      <Component {...pageProps} />
+      <Script
+        src="https://calendar.google.com/calendar/scheduling-button-script.js"
+        strategy="afterInteractive"
+        onLoad={initCalendarButtons}
+      />
+    </div>
   );
 }
