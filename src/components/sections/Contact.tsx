@@ -11,11 +11,12 @@ import {
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
     phone: "",
     message: "",
   });
+  const [status, setStatus] = useState("");
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -27,11 +28,27 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Contact form submitted:", formData);
-    alert("Message sent! We'll get back to you within 24 hours.");
-    setFormData({ fullName: "", email: "", phone: "", message: "" });
+    setStatus("იგზავნება...");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        setStatus("✅ წარმატებით გაიგზავნა!");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setStatus("❌ " + data.message);
+      }
+    } catch {
+      setStatus("❌ გაგზავნა ვერ მოხერხდა");
+    }
   };
 
   return (
@@ -84,9 +101,9 @@ const Contact = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input
                   type="text"
-                  name="fullName"
+                  name="name"
                   placeholder="სრული სახელი"
-                  value={formData.fullName}
+                  value={formData.name}
                   onChange={handleInputChange}
                   required
                   className="w-full rounded-lg py-1 px-2 border outline-0 border-slate-200 focus:border-slate-500 text-[0.875rem] bg-white placeholder:text-slate-400"
@@ -107,6 +124,7 @@ const Contact = () => {
                 placeholder="მობილური"
                 value={formData.phone}
                 onChange={handleInputChange}
+                required
                 className="w-full rounded-lg py-1 px-2 border outline-0 border-slate-200 focus:border-slate-500 text-[0.875rem] bg-white placeholder:text-slate-400"
               />
               <textarea
@@ -126,6 +144,8 @@ const Contact = () => {
                 შეტყობინების გაგზავნა
               </button>
             </form>
+
+            {status && <p className="mt-3">{status}</p>}
           </div>
 
           {/* Map */}
