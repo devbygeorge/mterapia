@@ -28,10 +28,10 @@ const FreeConsult = () => {
         <div className="rounded-2xl bg-gradient-to-r from-cyan-600 to-slate-900 text-white p-6 sm:p-8 shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
-              <h3 className="text-2xl  font-medium tracking-tight">
+              <h3 className="text-[1.5rem] font-medium tracking-tight">
                 უფასო სატელეფონო კონსულტაცია
               </h3>
-              <p className="mt-1 text-sm/6 text-cyan-100 ">
+              <p className="mt-1 text-[0.875rem]/6 text-cyan-100 ">
                 დასვით კითხვები და გაიგეთ, არის თუ არა მანუალური თერაპია
                 თქვენთვის შესაფერისი — ვალდებულების გარეშე.
               </p>
@@ -48,7 +48,7 @@ const FreeConsult = () => {
                 value={formData.phone}
                 onChange={handleInputChange}
                 required
-                className="bg-white w-full sm:w-56 rounded-lg border-0 text-sm text-slate-900 placeholder:text-slate-500 focus:ring-2 focus:ring-white px-3 py-2"
+                className="bg-white w-full sm:w-56 rounded-lg border-0 text-[0.875rem] text-slate-900 placeholder:text-slate-500 focus:ring-2 focus:ring-white px-3 py-2"
               />
               <input
                 type="email"
@@ -57,11 +57,11 @@ const FreeConsult = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="bg-white w-full sm:w-64 rounded-lg border-0 text-sm text-slate-900 placeholder:text-slate-500 focus:ring-2 focus:ring-white px-3 py-2"
+                className="bg-white w-full sm:w-64 rounded-lg border-0 text-[0.875rem] text-slate-900 placeholder:text-slate-500 focus:ring-2 focus:ring-white px-3 py-2"
               />
               <button
                 type="submit"
-                className="w-max inline-flex items-center justify-center gap-2 rounded-lg bg-white text-slate-900 px-4 py-2.5 text-sm font-semibold shadow-sm hover:bg-slate-100 transition"
+                className="w-max inline-flex items-center justify-center gap-2 rounded-lg bg-white text-slate-900 px-4 py-2.5 text-[0.875rem] font-semibold shadow-sm hover:bg-slate-100 transition cursor-pointer"
               >
                 <Phone className="w-4 h-4" />
                 ზარის მოთხოვნა

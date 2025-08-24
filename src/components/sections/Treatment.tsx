@@ -9,13 +9,13 @@ const Treatment = () => {
     <section id="treatment" className="relative scroll-mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-wider text-slate-500 ">
+          <p className="text-[0.75rem] uppercase tracking-wider text-slate-500 ">
             ხარისხიანი მოვლა
           </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl tracking-tight  font-medium text-slate-900">
+          <h2 className="mt-2 text-[1.875rem] sm:text-[2.25rem] tracking-tight font-medium text-slate-900">
             მკურნალობის მეთოდები
           </h2>
-          <p className="mt-2  text-slate-600">
+          <p className="mt-2 text-slate-600">
             პრაქტიკული მკურნალობა ტკივილის შესამცირებლად, მოძრაობის აღსადგენად
             და საუკეთესო შედეგის მისაღწევად.
           </p>
@@ -36,7 +36,7 @@ const Treatment = () => {
                     fill
                   />
                 </div>
-                <div className="absolute top-3 left-3 inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs shadow-sm ring-1  bg-white/90 text-slate-700 ring-black/5">
+                <div className="absolute top-3 left-3 inline-flex items-center gap-2 rounded-full px-3 py-1 text-[0.75rem] shadow-sm ring-1  bg-white/90 text-slate-700 ring-black/5">
                   <span
                     className={`h-2 w-2 rounded-full ${service.tagColor}`}
                   ></span>
@@ -45,11 +45,11 @@ const Treatment = () => {
               </div>
 
               <div className="flex-1 p-5">
-                <h3 className="text-xl font-semibold tracking-tight  text-slate-900">
+                <h3 className="text-[1.25rem] font-semibold tracking-tight text-slate-900">
                   {service.title}
                 </h3>
 
-                <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                <ul className="mt-4 space-y-2 text-[0.875rem] text-slate-600">
                   {service.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-start gap-2 ">
                       <CheckCircle2
@@ -67,7 +67,7 @@ const Treatment = () => {
                     {service.pricing.map((price, priceIndex) => (
                       <span
                         key={priceIndex}
-                        className="inline-flex items-center rounded-full px-2.5 py-1 text-xs  bg-slate-100 text-slate-700"
+                        className="inline-flex items-center rounded-full px-2.5 py-1 text-[0.75rem]  bg-slate-100 text-slate-700"
                       >
                         {price}
                       </span>

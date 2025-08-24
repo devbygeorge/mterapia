@@ -13,11 +13,11 @@ const Hero = () => {
               <BadgeCheck className="w-4 h-4 text-cyan-600" />
             </div>
 
-            <h1 className="sm:text-[2rem] lg:text-[3rem] text-[1.5rem] leading-[1.4] font-medium tracking-tight  text-slate-900">
+            <h1 className="sm:text-[2rem] lg:text-[3rem] text-[1.5rem] font-medium tracking-tight text-slate-900">
               ტკივილის შემსუბუქება და მოძრაობის აღდგენა
             </h1>
 
-            <p className="mt-4 text-base sm:text-lg max-w-xl  text-slate-600">
+            <p className="mt-4 text-[1rem] sm:text-[1.125rem] max-w-xl text-slate-600">
               ინდივიდუალური პრაქტიკული მოვლა, მკაფიო გეგმები და ზურგის, კისრისა
               და სახსრების ტკივილის შემსუბუქება.
             </p>

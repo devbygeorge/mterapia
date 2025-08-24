@@ -9,10 +9,10 @@ const Blog = () => {
     <section id="blog" className="relative bg-white scroll-mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-wider text-slate-500">
+          <p className="text-[0.75rem] uppercase tracking-wider text-slate-500">
             სწავლა
           </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl tracking-tight  font-medium text-slate-900">
+          <h2 className="mt-2 text-[1.875rem] sm:text-[2.25rem] tracking-tight  font-medium text-slate-900">
             უახლესი სტატიები
           </h2>
           <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ const Blog = () => {
               </div>
 
               <div className="p-5 flex-1">
-                <div className="flex items-center gap-2 text-xs">
+                <div className="flex items-center gap-2 text-[0.75rem]">
                   <span
                     className={`inline-flex items-center rounded-full px-2 py-0.5 ${article.categoryColor}`}
                   >
@@ -45,17 +45,17 @@ const Blog = () => {
                   </span>
                   <span className="text-slate-500">{article.readTime}</span>
                 </div>
-                <h3 className="mt-2 text-lg font-semibold text-slate-900">
+                <h3 className="mt-2 text-[1.125rem] font-semibold text-slate-900">
                   {article.title}
                 </h3>
-                <p className="mt-1 text-sm text-slate-600">
+                <p className="mt-1 text-[0.875rem] text-slate-600">
                   {article.description}
                 </p>
               </div>
               <div className="p-5 border-t border-slate-200 bg-white">
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-700 hover:text-cyan-800 transition"
+                  className="inline-flex items-center gap-2 text-[0.875rem] font-semibold text-cyan-700 hover:text-cyan-800 transition"
                 >
                   სტატიის წაკითხვა
                   <ArrowRight className="w-4 h-4" />

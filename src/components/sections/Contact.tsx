@@ -40,14 +40,14 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Contact details */}
           <div className="rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm p-5 sm:p-6">
-            <h3 className="text-xl  font-medium text-slate-900">
+            <h3 className="text-[1.25rem] font-medium text-slate-900">
               დაგვიკავშირდით
             </h3>
-            <p className="mt-2 text-sm text-slate-600 ">
+            <p className="mt-2 text-[0.875rem] text-slate-600 ">
               გაქვთ შეკითხვა? სიამოვნებით დაგეხმარებით.
             </p>
 
-            <div className="mt-4 space-y-3 text-sm">
+            <div className="mt-4 space-y-3 text-[0.875rem]">
               <a
                 href="tel:+995557585889"
                 className="flex items-center gap-2 text-slate-700 hover:text-slate-900 transition"
@@ -71,10 +71,10 @@ const Contact = () => {
             </div>
 
             <div className="mt-6">
-              <h4 className="text-sm font-semibold  text-slate-900">
+              <h4 className="text-[0.875rem] font-semibold text-slate-900">
                 სამუშაო საათები
               </h4>
-              <ul className="mt-2 text-sm text-slate-600  space-y-1">
+              <ul className="mt-2 text-[0.875rem] text-slate-600 space-y-1">
                 <li>ორშ–პარ: 08:30–19:00</li>
                 <li>შაბ: 09:00–14:00</li>
               </ul>
@@ -89,7 +89,7 @@ const Contact = () => {
                   value={formData.fullName}
                   onChange={handleInputChange}
                   required
-                  className="w-full rounded-lg border-slate-300 focus:border-cyan-500 focus:ring-cyan-500 text-sm  bg-white placeholder:text-slate-400"
+                  className="w-full rounded-lg py-1 px-2 border outline-0 border-slate-200 focus:border-slate-500 text-[0.875rem] bg-white placeholder:text-slate-400"
                 />
                 <input
                   type="email"
@@ -98,7 +98,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full rounded-lg border-slate-300 focus:border-cyan-500 focus:ring-cyan-500 text-sm  bg-white placeholder:text-slate-400"
+                  className="w-full rounded-lg py-1 px-2 border outline-0 border-slate-200 focus:border-slate-500 text-[0.875rem] bg-white placeholder:text-slate-400"
                 />
               </div>
               <input
@@ -107,7 +107,7 @@ const Contact = () => {
                 placeholder="მობილური"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="w-full rounded-lg border-slate-300 focus:border-cyan-500 focus:ring-cyan-500 text-sm  bg-white placeholder:text-slate-400"
+                className="w-full rounded-lg py-1 px-2 border outline-0 border-slate-200 focus:border-slate-500 text-[0.875rem] bg-white placeholder:text-slate-400"
               />
               <textarea
                 name="message"
@@ -116,11 +116,11 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 required
-                className="w-full rounded-lg border-slate-300 focus:border-cyan-500 focus:ring-cyan-500 text-sm  bg-white placeholder:text-slate-400"
+                className="w-full rounded-lg py-1 px-2 border outline-0 resize-none border-slate-200 focus:border-slate-500 text-[0.875rem] bg-white placeholder:text-slate-400"
               />
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold tracking-tight shadow-sm transition bg-slate-900 text-white hover:bg-slate-800"
+                className="inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-[0.875rem] font-semibold tracking-tight shadow-sm transition bg-slate-900 text-white hover:bg-slate-800 cursor-pointer"
               >
                 <Send className="w-4 h-4" />
                 შეტყობინების გაგზავნა
@@ -141,7 +141,7 @@ const Contact = () => {
               ></iframe>
             </div>
             <div className="p-4 border-t border-slate-200">
-              <div className="flex flex-wrap items-center gap-3 text-xs text-slate-600">
+              <div className="flex flex-wrap items-center gap-3 text-[0.75rem] text-slate-600">
                 <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-1">
                   <ParkingSquare className="w-4 h-4 text-slate-500" />
                   ეზოს პარკინგი

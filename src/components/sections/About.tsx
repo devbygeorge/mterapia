@@ -7,7 +7,7 @@ const About = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 py-14 sm:py-16">
           <div className="order-2 lg:order-1">
-            <h2 className="text-3xl sm:text-4xl tracking-tight font-medium text-slate-900">
+            <h2 className="text-[1.875rem] sm:text-[2.25rem] tracking-tight font-medium text-slate-900">
               დავით ბალხამიშვილი
             </h2>
             <p className="mt-3 text-slate-600">
@@ -19,11 +19,11 @@ const About = () => {
 
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-xl p-4 shadow-sm ring-1 bg-white ring-slate-200">
-                <div className="flex items-center gap-2 text-sm font-medium text-slate-900">
+                <div className="flex items-center gap-2 text-[0.875rem] font-medium text-slate-900">
                   <Award className="w-4 h-4 text-cyan-600" />
                   სერთიფიკატები
                 </div>
-                <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                <ul className="mt-3 space-y-2 text-[0.875rem] text-slate-600">
                   {[
                     "ფიზიოთერაპიის დოქტორი (DPT)",
                     "ორთოპედიული მანუალური თერაპია (OMT)",
@@ -38,11 +38,11 @@ const About = () => {
               </div>
 
               <div className="rounded-xl p-4 shadow-sm ring-1 bg-white ring-slate-200">
-                <div className="flex items-center gap-2 text-sm font-medium text-slate-900">
+                <div className="flex items-center gap-2 text-[0.875rem] font-medium text-slate-900">
                   <Compass className="w-4 h-4 text-green-600" />
                   მიდგომა
                 </div>
-                <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                <ul className="mt-3 space-y-2 text-[0.875rem] text-slate-600">
                   {[
                     "სახსრებისა და რბილი ქსოვილების მობილიზაცია",
                     "პერსონალიზებული მოძრაობა + გაძლიერება",
@@ -57,7 +57,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mt-5 inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-xs shadow-sm ring-1 bg-white text-slate-600 ring-slate-200">
+            <div className="mt-5 inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-[0.75rem] shadow-sm ring-1 bg-white text-slate-600 ring-slate-200">
               <MessageCircle className="w-4 h-4 text-amber-600" />
               მეგობრული, პაციენტზე ორიენტირებული მოვლა
             </div>

@@ -7,13 +7,13 @@ const Videos = () => {
     <section id="videos" className="relative scroll-mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-wider text-slate-500 ">
+          <p className="text-[0.75rem] uppercase tracking-wider text-slate-500 ">
             ყურება
           </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl tracking-tight  font-medium text-slate-900">
+          <h2 className="mt-2 text-[1.875rem] sm:text-[2.25rem] tracking-tight  font-medium text-slate-900">
             მოკლე ვიდეოები და რჩევები
           </h2>
-          <p className="mt-2  text-slate-600">
+          <p className="mt-2 text-slate-600">
             მარტივი რუტინები და ახსნა-განმარტებები, რომლებიც დაგეხმარებათ თავი
             უკეთ იგრძნოთ სესიებს შორის.
           </p>
@@ -36,8 +36,8 @@ const Videos = () => {
                 ></iframe>
               </div>
               <div className="p-4">
-                <h3 className=" font-semibold text-slate-900">{video.title}</h3>
-                <p className="mt-1 text-sm text-slate-600 ">
+                <h3 className="font-semibold text-slate-900">{video.title}</h3>
+                <p className="mt-1 text-[0.875rem] text-slate-600 ">
                   {video.description}
                 </p>
               </div>

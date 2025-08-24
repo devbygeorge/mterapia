@@ -82,7 +82,7 @@ const Header = () => {
               {navItems.map((item) => (
                 <Link
                   key={item.href}
-                  className="text-sm  text-slate-700 hover:text-slate-900 transition px-2 py-1"
+                  className="text-sm text-slate-700 hover:text-slate-900 transition px-2 py-1"
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

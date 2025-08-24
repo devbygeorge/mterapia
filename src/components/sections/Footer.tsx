@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Linkedin } from "lucide-react";
+import { Youtube, Facebook } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,9 +13,16 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { href: "#", icon: Instagram, label: "Instagram" },
-    { href: "#", icon: Youtube, label: "YouTube" },
-    { href: "#", icon: Linkedin, label: "LinkedIn" },
+    {
+      href: "https://www.facebook.com/davitireabilitologi",
+      icon: Facebook,
+      label: "Facebook",
+    },
+    {
+      href: "https://www.youtube.com/@davidbalkhamishvili4538",
+      icon: Youtube,
+      label: "YouTube",
+    },
   ];
 
   return (
@@ -23,15 +30,15 @@ const Footer = () => {
       <div className="max-w-7xl sm:px-6 lg:px-8 mr-auto ml-auto pt-10 pr-4 pb-10 pl-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <div className="text-base font-semibold tracking-tight  text-slate-900">
+            <div className="font-semibold tracking-tight text-slate-900">
               დავით ბალხამიშვილი
             </div>
-            <p className="text-sm text-slate-600 ">
+            <p className="text-[0.875rem] text-slate-600 ">
               მანუალური თერაპიის სპეციალისტი
             </p>
           </div>
 
-          <nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+          <nav className="flex flex-wrap gap-x-6 gap-y-3 text-[0.875rem]">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -44,7 +51,7 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="mt-6 flex items-center justify-between text-xs text-slate-500">
+        <div className="mt-6 flex items-center justify-between text-[0.75rem] text-slate-500">
           <p className="">
             © {currentYear} დავით ბალხამიშვილი. ყველა უფლება დაცულია.
           </p>
@@ -55,6 +62,7 @@ const Footer = () => {
                 href={social.href}
                 className="inline-flex items-center justify-center h-7 w-7 rounded-md ring-1 ring-slate-200 hover:bg-slate-50 transition"
                 aria-label={social.label}
+                target="_blank"
               >
                 <social.icon className="w-4 h-4 text-slate-500" />
               </a>

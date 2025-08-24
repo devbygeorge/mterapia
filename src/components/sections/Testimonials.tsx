@@ -23,13 +23,13 @@ const Testimonials = () => {
     <section id="testimonials" className="relative scroll-mt-16 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-wider text-slate-500 ">
+          <p className="text-[0.75rem] uppercase tracking-wider text-slate-500 ">
             კეთილი სიტყვები
           </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl tracking-tight  font-medium text-slate-900">
+          <h2 className="mt-2 text-[1.875rem] sm:text-[2.25rem] tracking-tight font-medium text-slate-900">
             პაციენტების შეფასებები
           </h2>
-          <p className="mt-2  text-slate-600">
+          <p className="mt-2 text-slate-600">
             რეალური ისტორიები იმ ადამიანებისგან, რომლებმაც დაუბრუნდნენ საყვარელ
             საქმეს.
           </p>
@@ -51,16 +51,16 @@ const Testimonials = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <figcaption className="font-medium text-sm  text-slate-900">
+                  <figcaption className="font-medium text-[0.875rem] text-slate-900">
                     {testimonial.name}
                   </figcaption>
-                  <span className="text-xs text-slate-500 ">
+                  <span className="text-[0.75rem] text-slate-500 ">
                     {testimonial.condition}
                   </span>
                 </div>
               </div>
 
-              <blockquote className="mt-3 text-sm text-slate-700 ">
+              <blockquote className="mt-3 text-[0.875rem] text-slate-700 ">
                 {testimonial.quote}
               </blockquote>
 
