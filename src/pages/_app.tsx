@@ -1,5 +1,6 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
+import { Analytics } from "@vercel/analytics/next";
 
 import "@/styles/globals.css";
 import { firaGO } from "@/assets/fonts";
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={firaGO.className}>
         <Component {...pageProps} />
       </div>
+      <Analytics />
     </>
   );
 }
