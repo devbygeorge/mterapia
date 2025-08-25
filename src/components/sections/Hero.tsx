@@ -60,7 +60,7 @@ const Hero = () => {
             <figure className="overflow-hidden rounded-2xl shadow-lg ring-1 bg-white ring-slate-200">
               <div className="relative w-full h-[420px] sm:h-[520px]">
                 <Image
-                  src="/hero.jpeg"
+                  src="/hero/3.jpg"
                   alt="Hands-on manual therapy session"
                   className="object-cover"
                   fill
