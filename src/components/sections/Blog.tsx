@@ -9,7 +9,7 @@ const Blog = () => {
     <section id="blog" className="relative bg-white scroll-mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
         <div className="max-w-2xl">
-          <p className="text-[0.75rem] uppercase tracking-wider text-slate-500">
+          <p className="text-[0.75rem] tracking-wider text-slate-500">
             სწავლა
           </p>
           <h2 className="mt-2 text-[1.875rem] sm:text-[2.25rem] tracking-tight  font-medium text-slate-900">
