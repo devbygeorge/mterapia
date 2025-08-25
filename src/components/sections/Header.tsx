@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Phone, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { CallButton } from "@/components/ui";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,9 +58,7 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-3">
-            <div id="nav-calendar-btn-wrapper">
-              <div id="nav-calendar-btn" className="hidden"></div>
-            </div>
+            <CallButton variant="light" text="ჩაწერა" />
 
             {/* Mobile menu button */}
             <button
@@ -89,13 +88,6 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <a
-                href="tel:+995557585889"
-                className="inline-flex items-center gap-2 rounded-lg border px-3.5 py-2 text-sm font-medium transition  border-slate-300 bg-white text-slate-800 hover:bg-slate-50 w-fit"
-              >
-                <Phone className="w-4 h-4" />
-                ზარი
-              </a>
             </nav>
           </div>
         )}

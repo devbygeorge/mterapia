@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Default App Title</title>
+        <title>დავით ბალხამიშვილი - მანუალური თერაპია</title>
       </Head>
       <div className={firaGO.className}>
         <Component {...pageProps} />
