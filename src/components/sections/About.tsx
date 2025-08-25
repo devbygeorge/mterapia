@@ -67,7 +67,7 @@ const About = () => {
             <div className="relative overflow-hidden rounded-2xl shadow-lg ring-1 bg-white ring-slate-200">
               <div className="relative w-full h-[420px] sm:h-[500px]">
                 <Image
-                  src="/about.jpg"
+                  src="/images/about.jpg"
                   alt="Portrait of therapist"
                   fill
                   className="object-cover"
