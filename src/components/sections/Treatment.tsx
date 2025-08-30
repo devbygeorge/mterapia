@@ -16,8 +16,7 @@ const Treatment = () => {
             მკურნალობის მეთოდები
           </h2>
           <p className="mt-2 text-slate-600">
-            პრაქტიკული მკურნალობა ტკივილის შესამცირებლად, მოძრაობის აღსადგენად
-            და საუკეთესო შედეგის მისაღწევად.
+            ტკივილის შემცირება, მოძრაობის აღდგენა და საუკეთესო შედეგი
           </p>
         </div>
 
@@ -28,19 +27,13 @@ const Treatment = () => {
               className="flex flex-col rounded-2xl ring-1 shadow-sm overflow-hidden bg-slate-50 ring-slate-200 hover:shadow-md transition-shadow duration-200"
             >
               <div className="relative">
-                <div className="relative h-72 w-full">
+                <div className="relative h-48 w-full">
                   <Image
                     className=" object-cover"
                     src={service.image}
                     alt={service.title}
                     fill
                   />
-                </div>
-                <div className="absolute top-3 left-3 inline-flex items-center gap-2 rounded-full px-3 py-1 text-[0.75rem] shadow-sm ring-1  bg-white/90 text-slate-700 ring-black/5">
-                  <span
-                    className={`h-2 w-2 rounded-full ${service.tagColor}`}
-                  ></span>
-                  {service.tag}
                 </div>
               </div>
 
@@ -53,27 +46,12 @@ const Treatment = () => {
                   {service.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-start gap-2 ">
                       <CheckCircle2
-                        className={`w-4 h-4 mt-0.5 ${service.checkColor}`}
+                        className={`w-4 h-4 min-w-4 min-h-4 mt-0.5 ${service.checkColor}`}
                       />
                       {benefit}
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div className="p-5 border-t border-slate-200 bg-white">
-                <div className="flex items-center justify-between">
-                  <div className="flex flex-wrap gap-2">
-                    {service.pricing.map((price, priceIndex) => (
-                      <span
-                        key={priceIndex}
-                        className="inline-flex items-center rounded-full px-2.5 py-1 text-[0.75rem]  bg-slate-100 text-slate-700"
-                      >
-                        {price}
-                      </span>
-                    ))}
-                  </div>
-                </div>
               </div>
             </article>
           ))}
