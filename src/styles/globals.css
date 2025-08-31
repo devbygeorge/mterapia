@@ -4,12 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
 /* Smooth gradient backdrop for hero */
 .hero-gradient {
   background: radial-gradient(
