@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function useDisableBodyScrollOnModal() {
+export const useDisableBodyScroll = () => {
   useEffect(() => {
     const observer = new MutationObserver(() => {
       const modal = document.querySelector(".hur54b");
@@ -16,4 +16,4 @@ export default function useDisableBodyScrollOnModal() {
 
     return () => observer.disconnect();
   }, []);
-}
+};

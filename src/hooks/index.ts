@@ -1,1 +1,1 @@
-export { default as useDisableBodyScrollOnModal } from "./useDisableBodyScrollOnModal";
+export { useDisableBodyScroll } from "./useDisableBodyScroll";

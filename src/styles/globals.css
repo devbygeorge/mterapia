@@ -72,41 +72,7 @@ html {
   transform: translateY(-2px);
 }
 
-.qxCTlb {
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  padding-block: 10px;
-}
-
-.qxCTlb:hover {
-  background-color: #1e293b !important;
-}
-
-.Xfsokf {
-  background-color: #0f172b;
-  top: 20px;
-  right: 20px;
-}
-
-.hur54b {
-  padding: 0;
-}
-
-#nav-calendar-btn-wrapper > button {
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 12px;
-}
-
 .body-no-scroll {
   overflow: hidden;
   height: 100%;
-}
-
-.body-no-scroll > *:not(.hur54b) {
-  pointer-events: none;
 }
