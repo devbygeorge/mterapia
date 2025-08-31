@@ -34,9 +34,9 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl sm:px-6 lg:px-8 mr-auto ml-auto pr-4 pl-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex min-h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <span className="sr-only ">Home</span>
+            <span className="sr-only">Home</span>
             <div className="flex flex-col leading-tight">
               <span className="text-base font-semibold tracking-tight  text-slate-900">
                 დავით ბალხამიშვილი

@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="flex flex-col justify-center">
             <div className="inline-flex gap-2 text-xs text-slate-600 bg-white border-slate-200 border rounded-full mb-4 pt-1.5 pr-3 pb-1.5 pl-3 shadow-sm items-center w-fit">
               მტკიცებულებებზე დაფუძნებული თერაპია
-              <BadgeCheck className="w-4 h-4 text-cyan-600" />
+              <BadgeCheck className="w-4 h-4 min-w-4 min-h-4 text-cyan-600" />
             </div>
 
             <h1 className="sm:text-[2rem] lg:text-[3rem] text-[1.5rem] font-medium tracking-tight text-slate-900">
