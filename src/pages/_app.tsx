@@ -2,6 +2,7 @@ import Head from "next/head";
 import type { AppProps } from "next/app";
 import { Analytics } from "@vercel/analytics/next";
 
+import "photoswipe/dist/photoswipe.css";
 import "@/styles/globals.css";
 import { firaGO } from "@/assets/fonts";
 

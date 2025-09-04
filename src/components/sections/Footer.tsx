@@ -7,8 +7,7 @@ const Footer = () => {
     { href: "/#conditions", label: "მდგომარეობები" },
     { href: "/#treatment", label: "მკურნალობა" },
     { href: "/#about", label: "ჩემს შესახებ" },
-    { href: "/#videos", label: "ვიდეოები" },
-    { href: "/#testimonials", label: "შეფასებები" },
+    { href: "/#gallery", label: "გალერეა" },
     { href: "/#contact", label: "კონტაქტი" },
   ];
 

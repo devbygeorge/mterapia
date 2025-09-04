@@ -10,6 +10,7 @@ import {
   Header,
   Footer,
   Policies,
+  Gallery,
 } from "@/components/sections";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Conditions />
       <Treatment />
       <About />
+      <Gallery />
       <Videos />
       <Testimonials />
       <FreeConsult />
