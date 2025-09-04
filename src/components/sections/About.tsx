@@ -1,4 +1,4 @@
-import { Award, Compass, Check, MessageCircle } from "lucide-react";
+import { Award, Check, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
 const About = () => {
@@ -24,37 +24,17 @@ const About = () => {
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-xl p-4 shadow-sm ring-1 bg-white ring-slate-200">
                 <div className="flex items-center gap-2 text-[0.875rem] font-medium text-slate-900">
-                  <Award className="w-4 h-4 text-cyan-600" />
-                  სერთიფიკატები
+                  <Award className="min-w-4 min-h-4 w-4 h-4 text-cyan-600" />
+                  დიპლომი
                 </div>
                 <ul className="mt-3 space-y-2 text-[0.875rem] text-slate-600">
                   {[
-                    "ფიზიოთერაპიის დოქტორი (DPT)",
-                    "ორთოპედიული მანუალური თერაპია (OMT)",
-                    "მექანიკური დიაგნოსტიკა და თერაპია (MDT)",
+                    "მასაჟი და სამკურნალო ფისკულტურის სპეციალისტი",
+                    "ბაკალავრის და მაგისტრის ხარისხი",
                   ].map((credential, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 mt-0.5 text-cyan-600" />
+                      <Check className="min-w-4 min-h-4 w-4 h-4 mt-0.5 text-cyan-600" />
                       {credential}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-xl p-4 shadow-sm ring-1 bg-white ring-slate-200">
-                <div className="flex items-center gap-2 text-[0.875rem] font-medium text-slate-900">
-                  <Compass className="w-4 h-4 text-green-600" />
-                  მიდგომა
-                </div>
-                <ul className="mt-3 space-y-2 text-[0.875rem] text-slate-600">
-                  {[
-                    "სახსრებისა და რბილი ქსოვილების მობილიზაცია",
-                    "პერსონალიზებული მოძრაობა + გაძლიერება",
-                    "სახლის მკაფიო, ქმედითი გეგმა",
-                  ].map((approach, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 mt-0.5 text-green-600" />
-                      {approach}
                     </li>
                   ))}
                 </ul>
