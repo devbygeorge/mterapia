@@ -1,4 +1,4 @@
-import { Award, Check, MessageCircle } from "lucide-react";
+import { Award, Check, MessageCircle, FileText } from "lucide-react";
 import Image from "next/image";
 
 const About = () => {
@@ -29,8 +29,25 @@ const About = () => {
                 </div>
                 <ul className="mt-3 space-y-2 text-[0.875rem] text-slate-600">
                   {[
-                    "მასაჟი და სამკურნალო ფისკულტურის სპეციალისტი",
+                    "მასაჟი და სამკურნალო ფიზკულტურის სპეციალისტი",
                     "ბაკალავრის და მაგისტრის ხარისხი",
+                  ].map((credential, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <Check className="min-w-4 min-h-4 w-4 h-4 mt-0.5 text-cyan-600" />
+                      {credential}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-xl p-4 shadow-sm ring-1 bg-white ring-slate-200">
+                <div className="flex items-center gap-2 text-[0.875rem] font-medium text-slate-900">
+                  <FileText className="min-w-4 min-h-4 w-4 h-4 text-cyan-600" />
+                  სერტიფიკატები
+                </div>
+                <ul className="mt-3 space-y-2 text-[0.875rem] text-slate-600">
+                  {[
+                    "რეაბილიტაციის, ორთოპედიისა და სპორტული მასაჟის სერტიფიკატები",
                   ].map((credential, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <Check className="min-w-4 min-h-4 w-4 h-4 mt-0.5 text-cyan-600" />
