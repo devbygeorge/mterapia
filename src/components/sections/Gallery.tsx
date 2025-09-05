@@ -19,14 +19,14 @@ const Gallery = () => {
               გალერეა
             </h3>
             <p className="mt-2 text-sm text-slate-600">
-              სხვა ფოტოები სპეციალისტის პრაქტიკიდან
+              სხვა სურათები სპეციალისტის პრაქტიკიდან
             </p>
           </div>
 
           <div className="hidden sm:flex items-center gap-2 text-sm text-slate-500">
             <span className="inline-flex items-center gap-2 rounded-lg px-3 py-1 ring-1 ring-slate-200 bg-white">
               <ImageIcon className="w-4 h-4 text-slate-500" />
-              ფოტოები: {gallery.length}
+              სურათები: {gallery.length}
             </span>
           </div>
         </div>
