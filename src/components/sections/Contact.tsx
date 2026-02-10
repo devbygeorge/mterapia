@@ -82,7 +82,7 @@ const Contact = () => {
               <div className="flex items-start gap-2 text-slate-700">
                 <MapPin className="mt-0.5 w-4 h-4 text-slate-500" />
                 <div>
-                  <p className="">20 Pavle Aslanidi St, Tbilisi</p>
+                  <p className="">103 Tsotne Dadiani St, Tbilisi</p>
                 </div>
               </div>
             </div>
@@ -153,7 +153,7 @@ const Contact = () => {
             <div className="aspect-[16/9] w-full">
               <iframe
                 className="h-full w-full"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.0471567852333!2d44.77860663423748!3d41.71950125913311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d5d504d007%3A0x7af59c173109871e!2s20%20Pavle%20Aslanidi%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1755600951049!5m2!1sen!2sge"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186.09696935419024!2d44.79831818691142!3d41.73019571604662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472b633b00e25%3A0xec2ff55cb38d4ce3!2s103%20Tsotne%20Dadiani%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1770702564073!5m2!1sen!2sge"
                 width="600"
                 height="450"
                 loading="lazy"

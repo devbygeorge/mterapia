@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="mt-5 flex flex-wrap items-center gap-5 text-sm text-slate-600">
               <span className="inline-flex items-center gap-2 ">
                 <MapPin className="w-4 h-4 text-slate-500" />
-                20 პავლე ასლანიდი, თბილისი
+                ც. დადიანის ქ. 103, თბილისი
               </span>
               <span className="inline-flex items-center gap-1.5">
                 {[...Array(4)].map((_, i) => (
